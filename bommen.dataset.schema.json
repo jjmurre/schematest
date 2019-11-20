@@ -1,0 +1,78 @@
+{
+  "id": "bommen",
+  "type": "dataset",
+  "title": "",
+  "version": "0.0.1",
+  "crs": "EPSG:28992",
+  "classes": [
+    {
+      "id": "bommen",
+      "type": "class",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "dataset",
+          "class"
+        ],
+        "properties": {
+          "class": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/class"
+          },
+          "dataset": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/dataset"
+          },
+          "id": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/id",
+            "description": "uniek"
+          },
+          "Kenmerk": {
+            "type": "string",
+            "description": ""
+          },
+          "Datum": {
+            "type": "string",
+            "description": ""
+          },
+          "Soort_hand": {
+            "type": "string",
+            "description": ""
+          },
+          "Bron1": {
+            "type": "string",
+            "description": ""
+          },
+          "Datum1": {
+            "type": "string",
+            "description": ""
+          },
+          "Intekening": {
+            "type": "string",
+            "description": ""
+          },
+          "Nauwkeurig": {
+            "type": "string",
+            "description": ""
+          },
+          "Opmerkinge": {
+            "type": "string",
+            "description": ""
+          },
+          "SHAPE_Leng": {
+            "type": "number",
+            "description": ""
+          },
+          "SHAPE_Area": {
+            "type": "number",
+            "description": ""
+          },
+          "geometry": {
+            "$ref": "https://geojson.org/schema/Geometry.json"
+          }
+        }
+      }
+    }
+  ]
+}

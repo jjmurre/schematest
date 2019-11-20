@@ -1,0 +1,46 @@
+{
+  "id": "sportparken",
+  "type": "dataset",
+  "title": "",
+  "version": "0.0.1",
+  "crs": "EPSG:28992",
+  "classes": [
+    {
+      "id": "sportparken",
+      "type": "class",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "dataset",
+          "class"
+        ],
+        "properties": {
+          "class": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/class"
+          },
+          "dataset": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/dataset"
+          },
+          "id": {
+            "$ref": "https://ams-schema.glitch.me/schema@v0.1#/definitions/id",
+            "description": ""
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": ""
+          },
+          "omtrekGis": {
+            "type": "number",
+            "description": ""
+          },
+          "geometry": {
+            "$ref": "https://geojson.org/schema/Geometry.json"
+          }
+        }
+      }
+    }
+  ]
+}
